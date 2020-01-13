@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+    <welcome-file-list>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <resource-ref>
+        <!-- 描述信息 -->
+        <description>Connection Pool</description>
+        <!-- 数据源名字 和上面配置中数据源的名字一致-->
+        <res-ref-name>jdbc/cmssql</res-ref-name>
+        <!-- 数据源类型 -->
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+</web-app>

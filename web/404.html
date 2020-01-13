@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="5;url=http://localhost:8079/cms_war_exploded/" />
+	<title>404</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<style type="text/css">
+	body{
+		 background-color: #badbf3;
+	}
+	.container{
+		position: relative;
+		width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	img:first-of-type{
+		height: 600px;
+		margin-top: 100px;
+	}
+	img:last-of-type{
+		position: absolute;
+		top: 150px;
+		left: 15%;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="https://i.loli.net/2019/11/06/XhnqZ2lwtUDyvor.png" alt="404">
+		<img src="https://i.loli.net/2019/11/06/bM4lziowGARIsNm.png">
+	</div>
+	<script type="text/javascript">
+		var time = 30; //时间,秒
+		function Redirect() {
+			window.location.href="/";
+		}
+		timer = setTimeout('Redirect()', time * 1000); //跳转
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource
+            path="/cms_war_exploded"
+            name="jdbc/cmssql"
+            type="javax.sql.DataSource"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://127.0.0.1:3306/java_cms?serverTimezone=UTC"
+            username="root"
+            password="ha&lt;06vSk:gj("
+            maxActive="100"
+            maxIdle="30"
+            minIdle="600"
+            initialSize="400"
+            timeBetweenEvictionRunsMillis="30000"
+            minEvictableIdleTimeMillis="1800000"
+            removeAbandoned="true"
+            removeAbandonedTimeout="180"
+            testOnBorrow="true"
+            maxWait="300000"
+            logAbandoned="true"
+            testOnReturn="false"
+    />
+</Context>
